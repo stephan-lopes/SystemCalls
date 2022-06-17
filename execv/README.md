@@ -23,4 +23,4 @@ Você pode fazer o teste, modificando o `return 0;` do código `hello.c` por `re
 ./exec_demo 1>/dev/null; echo $?
 ```
 
-O trecho de código `1>/dev/null` apenas direciona o STDOUT (a saída da tela do programa) para **vazioi**, filtrando a saída apenas do código de retorno. Já o comando `$?` no linux, mostra o código de retorno do último processo. Ele irá retornar **1**, pois você está encerrando o processo pelo programa `hello` e não pelo `exec_demo`.
+O trecho de código `1>/dev/null` apenas direciona o STDOUT (a saída da tela do programa) para **vazio**, filtrando a saída apenas do código de retorno. Já o comando `$?` no linux, mostra o código de retorno do último processo. Ele irá retornar **1**, pois você está encerrando o processo pelo programa `hello` e não pelo `exec_demo`.
